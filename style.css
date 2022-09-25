@@ -1,11 +1,18 @@
+.website {
+  width: 1200px;
+  margin: 0 auto;
+}
 .header {
   width: 1200px;
   height: 60px;
+  border-bottom: 2px solid blue;
   display: inline-flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 .logo {
-  font-size: 50px;
+  height: 100%;
+  font-size: 30px;
   display: flex;
   align-items: center;
 }
@@ -13,6 +20,7 @@
   color: blue;
 }
 .navigation {
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -21,37 +29,32 @@
   background: white;
   font-size: 15px;
   border-radius: 5px;
-  padding: 20px 20px;
+  padding: 10px 20px;
   margin: 10px;
 }
-.button_1 {
+.button-1 {
   border: none;
   background: blue;
   color: white;
   font-size: 15px;
   border-radius: 5px;
-  padding: 10px 10px;
-  margin: 10px;
+  padding: 10px 20px;
 }
 .button:hover {
   background: blue;
   color: red;
 }
-.button_1:hover {
+.button-1:hover {
   background: red;
   color: black;
 }
-.line {
-  width: 1200px;
-  border-bottom: 2px solid blue;
-}
 .content {
   width: 1200px;
-  background: wheat;
+  background: white;
   display: flex;
   justify-content: center;
 }
-.content_mini {
+.content__mini {
   width: 990px;
 }
 .rubric {
@@ -65,46 +68,53 @@
   display: flex;
   justify-content: space-evenly;
 }
-.article_1,
-.article_2,
-.article_3 {
-  width: 30%;
+.article-1,
+.article-2,
+.article-3 {
+  width: 27%;
   height: 400px;
   text-align: center;
   border-radius: 10px;
-  padding: 10px;
 }
-.article_1 {
+.article-1 {
   background: green;
   color: white;
 }
-.article_2 {
+.article-2 {
   background: blue;
   color: white;
 }
-.article_3 {
+.article-3 {
   background: orange;
   color: white;
+}
+.text-1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.text-2 {
+  font-size: 50px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.text-2 sup {
+  font-size: 25px;
 }
 .section button {
   border: none;
   color: white;
   border-radius: 5px;
-  padding: 20px 20px;
+  padding: 15px 15px;
   font-size: large;
-}
-.article_1 button {
-  background: greenyellow;
-}
-.article_2 button {
-  background: rgb(74, 98, 206);
-}
-.article_3 button {
-  background: greenyellow;
+  background: #797878;
 }
 .section button:hover {
   background: red;
   color: black;
+}
+.section__button {
+  border: 2px solid black;
 }
 .rubric__text_2 {
   text-align: center;
@@ -149,14 +159,14 @@
   margin: 50px;
 }
 .main button {
-  background: greenyellow;
+  background: red;
   padding: 15px;
-  border-radius: 5px;
   border: none;
+  padding: 10px 40px;
 }
 .main a {
   text-decoration: none;
-  color: red;
+  color: white;
 }
 .main button:hover {
   background: blue;
@@ -235,10 +245,15 @@
   border-radius: 5px;
 }
 .foter {
-  border: 2px solid red;
   padding: 20px 15px;
 }
-.foter img {
-  width: 70%;
+.foter__img {
+  width: 65%;
   height: 400px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+.foter img {
+  width: 100%;
+  height: 100%;
 }
