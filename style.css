@@ -1,4 +1,4 @@
-.website {
+.main {
   width: 1200px;
   margin: 0 auto;
 }
@@ -32,7 +32,7 @@
   padding: 10px 20px;
   margin: 10px;
 }
-.button-1 {
+.button-active {
   border: none;
   background: blue;
   color: white;
@@ -44,216 +44,279 @@
   background: blue;
   color: red;
 }
-.button-1:hover {
+.button-a.button-active {
   background: red;
   color: black;
 }
-.content {
+.body__1 {
   width: 1200px;
   background: white;
   display: flex;
   justify-content: center;
 }
-.content__mini {
+.body__1-1 {
   width: 990px;
 }
 .rubric {
   font-size: 30px;
   text-align: center;
+  margin-top: 20px;
 }
-.rubric__text {
+.rubric-text {
   text-align: center;
 }
-.section {
+.cards {
   display: flex;
-  justify-content: space-evenly;
-}
-.article-1,
-.article-2,
-.article-3 {
-  width: 27%;
+  width: 990px;
+  justify-content: space-around;
   height: 400px;
-  text-align: center;
-  border-radius: 10px;
 }
-.article-1 {
+.card-item-1,
+.card-item-2,
+.card-item-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 40px;
+  width: 25%;
+  margin: 20px;
+}
+.card-item-1 {
   background: green;
   color: white;
 }
-.article-2 {
+.card-item-2 {
   background: blue;
   color: white;
 }
-.article-3 {
+.card-item-3 {
   background: orange;
   color: white;
 }
-.text-1 {
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 15px;
+.card-title {
+  font-size: 20px;
 }
-.text-2 {
-  font-size: 50px;
-  margin-top: 40px;
-  margin-bottom: 20px;
+.card-price {
+  font-size: 40px;
 }
-.text-2 sup {
-  font-size: 25px;
+.card-text {
+  text-align: center;
 }
-.section button {
+.cards button {
   border: none;
+  background: #797878;
   color: white;
   border-radius: 5px;
   padding: 15px 15px;
-  font-size: large;
-  background: #797878;
+  font-weight: bold;
+  font-size: 18px;
 }
-.section button:hover {
+.cards button:hover {
   background: red;
   color: black;
 }
-.section__button {
-  border: 2px solid black;
+.rubric-article {
+  padding-top: 20px;
 }
-.rubric__text_2 {
-  text-align: center;
-  padding: 0px 50px;
+.body__2 {
+  width: 1200px;
+  background: rgb(221, 218, 212);
+  display: flex;
+  justify-content: center;
 }
-.article_4,
-.article_5 {
+.body__2-1 {
+  width: 990px;
+}
+.specialists {
+  display: flex;
+  width: 990px;
+  justify-content: space-around;
+}
+.specialists-card {
   width: 35%;
-  height: 550px;
   background: white;
   text-align: center;
   border-radius: 15px;
   padding: 20px;
-  margin: 10px;
-  border: 2px solid black;
+  margin: 20px;
 }
-.section img {
-  width: 80%;
-  height: 250px;
+.specialists img {
+  width: 40%;
+  height: 100px;
   border-radius: 50%;
 }
-.text {
+.specialists-name {
   color: red;
-  font-size: larger;
+  font-size: 25px;
 }
-
-.main {
+.article {
   width: 1200px;
   display: flex;
+  padding-top: 15px;
 }
-.main__text {
+.article-text {
   width: 65%;
   padding: 30px;
 }
-.main img {
+.article img {
   width: 100%;
   height: 280px;
 }
-.main__img {
+.article-img {
   width: 35%;
   height: 100%;
   margin: 50px;
 }
-.main button {
+.article button {
   background: red;
   padding: 15px;
   border: none;
   padding: 10px 40px;
 }
-.main a {
+.article a {
   text-decoration: none;
   color: white;
 }
-.main button:hover {
+.article button:hover {
   background: blue;
 }
 .gallery {
   width: 1200px;
+  height: 1600px;
   background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .collage {
   width: 90%;
-  margin: 60px;
   display: inline-flex;
 }
-
-.collage_1 {
-  width: 65%;
+.collage-1 {
+  width: 62%;
+  padding: 0px 10px 0px 0px;
 }
-.collage_1_1 {
+.collage-1-1 {
   width: 100%;
-  height: 30%;
+  height: 37%;
+  padding: 0px 0px 10px 0px;
 }
-.collage_1_1 img {
+.collage-1-1 img {
   width: 100%;
   height: 100%;
 }
-.collage_1_2 {
+.collage-1-2 {
   width: 100%;
-  height: 50%;
+  height: 45%;
   display: flex;
+  padding: 10px 0px 10px 0px;
 }
-.collage_1_21 {
+.collage-1-21 {
+  width: 100%;
+  height: 100%;
+  padding: 0px 10px 0px 0px;
+}
+.collage-1-21 img {
   width: 100%;
   height: 100%;
 }
-.collage_1_21 img {
+.collage-1-22 {
   width: 100%;
   height: 100%;
+  display: block;
+  padding: 0px 0px 0px 10px;
 }
-.collage_1_22 {
-  width: 100%;
-  height: 100%;
-}
-.collage_1_22 img {
+.collage-1-221 {
   width: 100%;
   height: 50%;
+  padding: 0px 0px 5px 0px;
 }
-
-.collage_1_3 {
-  width: 100%;
-  height: 20%;
-}
-.collage_1_3 img {
+.collage-1-221 img {
   width: 100%;
   height: 100%;
 }
-.collage_2 {
-  width: 35%;
-}
-.collage_2 img {
+.collage-1-222 {
   width: 100%;
+  height: 50%;
+  padding: 5px 0px 0px 0px;
 }
+.collage-1-222 img {
+  width: 100%;
+  height: 100%;
+}
+.collage-1-3 {
+  width: 100%;
+  height: 18%;
 
-.panel {
+  padding: 30px 0px 0px 0px;
+}
+.collage-1-3 img {
+  width: 100%;
+  height: 100%;
+}
+.collage-2 {
+  width: 38%;
+  padding: 0px 0px 0px 10px;
+}
+.collage-2-1 {
+  width: 100%;
+  height: 75%;
+  padding: 0px 0px 25px 0px;
+}
+.collage-2-2 {
+  width: 100%;
+  height: 25%;
+  padding: 25px 0px 0px 0px;
+}
+.collage-2-1 img {
+  width: 100%;
+  height: 100%;
+}
+.collage-2-2 img {
+  width: 100%;
+  height: 100%;
+}
+.subscribe {
   width: 1200px;
   height: 300px;
   background-image: url(https://bipbap.ru/wp-content/uploads/2017/04/0_7c779_5df17311_orig.jpg);
   background-size: 100%;
+  margin-top: 10px;
   color: white;
+  box-sizing: border-box;
   padding: 10px 20px;
 }
-.panel button {
+.subscribe button {
   padding: 10px 15px;
-  background: #11897d;
+  background: red;
   color: #fff;
-  border: 1px solid #fff;
+  border: none;
   border-radius: 5px;
 }
-.foter {
+.subscribe-button {
+  margin-top: 20px;
+}
+.body__3 {
+  width: 1200px;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+.body__3-1 {
+  width: 990px;
+}
+.conclusion {
   padding: 20px 15px;
 }
-.foter__img {
+.conclusion-img {
   width: 65%;
   height: 400px;
   margin: 0 auto;
-  border: 1px solid blue;
 }
-.foter img {
+.conclusion img {
   width: 100%;
   height: 100%;
 }
